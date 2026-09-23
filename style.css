@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    padding: 20px;
+}
+
+.weather-container {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-box button:hover {
+    background: #0056b3;
+}
+
+#message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.weather-card {
+    margin-top: 20px;
+    padding: 25px;
+    background: #f5f9ff;
+    border-radius: 15px;
+}
+
+.weather-card h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.temperature {
+    font-size: 50px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#weatherDescription {
+    margin: 10px 0 25px;
+    color: #555;
+    font-size: 18px;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.detail {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.detail span {
+    font-size: 25px;
+}
+
+.detail p {
+    margin: 8px 0;
+    color: #666;
+}
+
+.detail strong {
+    color: #222;
+}
+
+@media (max-width: 500px) {
+
+    .weather-container {
+        padding: 20px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+    .weather-details {
+        flex-direction: column;
+    }
+
+    .detail {
+        width: 100%;
+    }
+}
